@@ -1,0 +1,34 @@
+{
+  "name": "@neos21/__PACKAGE_NAME__",  // 外部公開しない場合は `@neos21/` は不要
+  "version": "0.0.0",  // 外部公開しない場合は削除する
+  "description": "__PACKAGE_DESCRIPTION__",
+  "private": true,  // 外部公開しない場合のみ記述する
+  "main": "main.js",
+  "bin": {  // 必要な場合のみ
+    "__COMMAND_NAME__": "main.js"
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Neo <neos21@gmail.com> (http://neo.s21.xrea.com/)",
+  "license": "MIT",
+  "homepage": "https://github.com/Neos21/__REPO_NAME__#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neos21/__REPO_NAME__.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neos21/__REPO_NAME__/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Neos21"
+  },
+  "keywords": [  // 付けたい場合のみ
+    "Neo's World"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
