@@ -12,7 +12,7 @@ __SOME_TEXT__
 
 ## Author
 
-[Neo](http://neo.s21.xrea.com/) ([@Neos21](https://twitter.com/Neos21))
+[Neo](http://neo.s21.xrea.com/)
 
 - [GitHub - __REPO_NAME__](https://github.com/Neos21/__REPO_NAME__)
 - [npm - @neos21/__PACKAGE_NAME__](https://www.npmjs.com/package/@neos21/__PACKAGE_NAME__)  // npm パッケージでなければ削除する
