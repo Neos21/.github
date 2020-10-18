@@ -3,12 +3,12 @@
   "version": "0.0.0",  // 外部公開しない場合は削除する
   "description": "__PACKAGE_DESCRIPTION__",
   "private": true,  // 外部公開しない場合のみ記述する
-  "main": "main.js",
+  "main": "index.js",
   "bin": {  // 必要な場合のみ
-    "__COMMAND_NAME__": "main.js"
+    "__COMMAND_NAME__": "index.js"
   },
   "scripts": {
-    "start": "node main.js"
+    "start": "node index.js"
   },
   "author": "Neo <neos21@gmail.com> (http://neo.s21.xrea.com/)",
   "license": "MIT",
