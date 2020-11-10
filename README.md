@@ -12,7 +12,7 @@ __SOME_TEXT__
 
 ## Author
 
-[Neo](http://neos21.net/)
+[Neo](https://neos21.net/)
 
 - [GitHub - __REPO_NAME__](https://github.com/Neos21/__REPO_NAME__)  // npm パッケージでなければ削除する
 - [GitHub Pages - __REPO_NAME__ : __SITE_NAME__](https://neos21.github.io/__REPO_NAME__)  // GitHub Pages がなければ削除する
@@ -21,7 +21,7 @@ __SOME_TEXT__
 
 ## Links
 
-- [Neo's World](http://neos21.net/)
+- [Neo's World](https://neos21.net/)
 - [Neo's GitHub Pages](https://neos21.github.io/)
 - [Corredor](https://neos21.hatenablog.com/)
 - [GitHub - Neos21](https://github.com/Neos21/)  // npm パッケージでなければ削除する
