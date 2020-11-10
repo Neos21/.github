@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Neo <neos21@gmail.com> (http://neos21.net/)",
+  "author": "Neo <neos21@gmail.com> (https://neos21.net/)",
   "license": "MIT",
   "homepage": "https://github.com/Neos21/__REPO_NAME__#readme",
   "repository": {
