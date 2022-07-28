@@ -3,6 +3,7 @@
   "version": "0.0.0",  // 外部公開しない場合は削除する
   "description": "__PACKAGE_DESCRIPTION__",
   "private": true,  // 外部公開しない場合のみ記述する
+  "type": "module",  // 必要な場合のみ
   "main": "index.js",
   "bin": {  // 必要な場合のみ
     "__COMMAND_NAME__": "index.js"
