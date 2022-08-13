@@ -1,6 +1,6 @@
 # @neos21/__PACKAGE_NAME__ : __REPO_NAME__  // npm パッケージでなければ `@neos21/__PACKAGE_NAME__` は削除する
 
-[![NPM Version](https://img.shields.io/npm/v/@neos21/__PACKAGE_NAME__.svg)](https://www.npmjs.com/package/@neos21/__PACKAGE_NAME__) [![GPR Version](https://img.shields.io/github/package-json/v/neos21/__REPO_NAME__?label=github)](https://github.com/Neos21/__REPO_NAME__/packages/__ID__)  // npm パッケージでなければ削除する
+[![NPM Version](https://img.shields.io/npm/v/@neos21/__PACKAGE_NAME__.svg)](https://www.npmjs.com/package/@neos21/__PACKAGE_NAME__) [![GPR Version](https://img.shields.io/github/package-json/v/neos21/__REPO_NAME__?label=github)](https://github.com/Neos21/__REPO_NAME__/pkgs/npm/__PACKAGE_NAME__)  // npm パッケージでなければ削除する
 
 __PACKAGE_DESCRIPTION__
 
