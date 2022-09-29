@@ -21,8 +21,8 @@ function confirm() {
   if [ "${confirm}" != 'y' -a "${confirm}" != 'Y' ]; then return 1; fi
 }
 
-# この Bash ファイルがあるディレクトリのフルパス
-src_dir="$(cd "$(dirname "$0")" ; pwd)"
+# この Bash ファイルを起点とした Templates ディレクトリのフルパス
+src_dir="$(cd "$(dirname "$0")/templates" ; pwd)"
 # 呼び出し元であるディレクトリのフルパス
 dst_dir="$(pwd)"
 
@@ -52,17 +52,16 @@ function copy_root_file() {
   echo ''
 }
 
-# サブディレクトリを作ってコピーする : `_workflows/` ディレクトリは名前が異なるので引数を別々に取る
+# サブディレクトリを作ってコピーする
 function copy_sub_dir_file() {
-  local src_sub_dir="$1"
-  local dst_sub_dir="$2"
-  local file_name="$3"
-  if confirm "[${dst_sub_dir}/${file_name}] Copy ?"; then
-    mkdir -p "${dst_dir}/${dst_sub_dir}"
-    cp -i "${src_dir}/${src_sub_dir}/${file_name}" "${dst_dir}/${dst_sub_dir}/${file_name}"
-    echo "[${dst_sub_dir}/${file_name}] Copied!"
+  local sub_dir="$1"
+  local file_name="$2"
+  if confirm "[${sub_dir}/${file_name}] Copy ?"; then
+    mkdir -p "${dst_dir}/${sub_dir}"
+    cp -i "${src_dir}/${sub_dir}/${file_name}" "${dst_dir}/${sub_dir}/${file_name}"
+    echo "[${sub_dir}/${file_name}] Copied!"
   else
-    echo "[${dst_sub_dir}/${file_name}] Skipped"
+    echo "[${sub_dir}/${file_name}] Skipped"
   fi
   echo ''
 }
@@ -70,14 +69,14 @@ function copy_sub_dir_file() {
 echo ''
 copy_root_file '.gitignore'
 copy_root_file 'README.md'
-copy_sub_dir_file '.github' '.github' 'FUNDING.yml'
+copy_sub_dir_file '.github' 'FUNDING.yml'
 
 copy_root_file 'package.json'
 
 copy_root_file 'LICENSE'
 copy_root_file '.npmignore'
-copy_sub_dir_file '.github/_workflows' '.github/workflows' 'publish-to-gpr.yaml'
-copy_sub_dir_file '.github/_workflows' '.github/workflows' 'publish-to-npm.yaml'
-copy_sub_dir_file '.github/_workflows' '.github/workflows' 'deploy-to-github-pages.yaml'
+copy_sub_dir_file '.github/workflows' 'publish-to-gpr.yaml'
+copy_sub_dir_file '.github/workflows' 'publish-to-npm.yaml'
+copy_sub_dir_file '.github/workflows' 'deploy-to-github-pages.yaml'
 
 echo 'Finished'
