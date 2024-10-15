@@ -210,8 +210,6 @@ const templateFiles = [
     content: `.DS_Store
 Thumbs.db
 
-*.log
-
 node_modules/
 `
   },
@@ -260,6 +258,10 @@ custom:
   }
 }
 `
+  },
+  {
+    fileName: '.nojekyll',
+    content: ''
   }
 ];
 
